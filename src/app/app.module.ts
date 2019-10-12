@@ -11,9 +11,12 @@ import {
   MatCheckboxModule,
   MatSelectModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatCardModule,
 } from '@angular/material';
 
+
+import { FormsModule } from "@angular/forms";
 
 import { ButtonComponent } from './button/button.component'; import { FlexLayoutModule } from '@angular/flex-layout';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
@@ -21,6 +24,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { SelectComponent } from './select/select.component';
 import { FormFieldComponent } from './form-field/form-field.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,8 @@ import { FormFieldComponent } from './form-field/form-field.component';
     EventBindingComponent,
     CheckboxComponent,
     SelectComponent,
-    FormFieldComponent
+    FormFieldComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,9 @@ import { FormFieldComponent } from './form-field/form-field.component';
     MatCheckboxModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

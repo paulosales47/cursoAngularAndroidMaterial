@@ -1,0 +1,18 @@
+.example-card {
+    max-width: 400px;
+    min-height: 250px;
+    flex: 1 1 200px;
+    margin: 0 15px;
+  }
+
+  .container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-height: 100vh;
+  }
+
+  .formulario{
+      display: flex;
+      flex-direction: column;
+  }

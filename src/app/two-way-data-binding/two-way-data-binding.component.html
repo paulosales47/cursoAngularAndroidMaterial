@@ -1,0 +1,66 @@
+<div class="container">
+
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Formulário de cadastro</mat-card-title>
+            <mat-card-subtitle>Preencha os campos abaixo:</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="formulario">
+                <mat-form-field>
+                    <input matInput placeholder="Informe seu nome" autocomplete="off" [(ngModel)]="nome">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput type="number" placeholder="Informe sua idade" autocomplete="off"
+                        [(ngModel)]="idade">
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <p>{{nome}}</p>
+            <p>{{idade}}</p>
+            <button mat-raised-button color="primary">Salvar</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Formulário de cadastro</mat-card-title>
+            <mat-card-subtitle>Preencha os campos abaixo:</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="formulario">
+                <mat-form-field>
+                    <input matInput placeholder="Informe seu primeiro nome" autocomplete="off" name="nome"
+                        [(ngModel)]="cliente.nome">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Informe seu sobrenome" autocomplete="off" name="sobrenome"
+                        [(ngModel)]="cliente.sobrenome">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input type="email" matInput placeholder="Informe seu e-mail" autocomplete="off" name="email"
+                        [(ngModel)]="cliente.email">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input type="date" matInput placeholder="Informe sua data de nascimento" autocomplete="off"
+                        name="dataNascimento" [(ngModel)]="cliente.dataNascimento">
+                </mat-form-field>
+
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <p> {{cliente.nome}} </p>
+            <p> {{cliente.sobrenome}} </p>
+            <p> {{cliente.email}} </p>
+            <p> {{cliente.dataNascimento}} </p>
+            <button mat-raised-button color="primary">Salvar</button>
+        </mat-card-actions>
+    </mat-card>
+
+
+</div>
