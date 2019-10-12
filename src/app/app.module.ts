@@ -8,7 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
   MatIconModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatSelectModule
 } from '@angular/material';
 
 
@@ -16,6 +17,7 @@ import { ButtonComponent } from './button/button.component'; import { FlexLayout
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { SelectComponent } from './select/select.component';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     ButtonComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
