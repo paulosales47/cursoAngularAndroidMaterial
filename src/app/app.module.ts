@@ -9,7 +9,9 @@ import {
   MatButtonModule,
   MatIconModule,
   MatCheckboxModule,
-  MatSelectModule
+  MatSelectModule,
+  MatFormFieldModule,
+  MatInputModule
 } from '@angular/material';
 
 
@@ -18,7 +20,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { SelectComponent } from './select/select.component';
-
+import { FormFieldComponent } from './form-field/form-field.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { SelectComponent } from './select/select.component';
     PropertyBindingComponent,
     EventBindingComponent,
     CheckboxComponent,
-    SelectComponent
+    SelectComponent,
+    FormFieldComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { SelectComponent } from './select/select.component';
     MatIconModule,
     FlexLayoutModule,
     MatCheckboxModule,
-    MatSelectModule
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
