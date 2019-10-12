@@ -10,8 +10,11 @@ export class RadioButtonComponent implements OnInit {
   favoriteSeason: string;
   seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
 
+
   tamanhoFonte: string = "12px";
   cor: string = "black";
+
+  classe: string = 'classe1';
 
   constructor() { }
 
