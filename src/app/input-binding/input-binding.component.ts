@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Cliente } from '../models/cliente.model';
 
 @Component({
   selector: 'app-input-binding',
@@ -7,7 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class InputBindingComponent implements OnInit {
 
-  @Input() name: string;
+  @Input('name') nome: string;
+  @Input('age') idade: number;
+
+  @Input() cliente: Cliente;
 
   constructor() { }
 

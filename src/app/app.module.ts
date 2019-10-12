@@ -29,6 +29,7 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
 import { RadioButtonComponent } from './radio-button/radio-button.component';
 import { Page404Component } from './pageStatus/page404/page404.component';
 import { InputBindingComponent } from './input-binding/input-binding.component';
+import { InputBindingComObjetosComponent } from './input-binding-com-objetos/input-binding-com-objetos.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { InputBindingComponent } from './input-binding/input-binding.component';
     TwoWayDataBindingComponent,
     RadioButtonComponent,
     Page404Component,
-    InputBindingComponent
+    InputBindingComponent,
+    InputBindingComObjetosComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { combineLatest } from 'rxjs';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { RadioButtonComponent } from './radio-button/radio-button.component';
 import { Page404Component } from './pageStatus/page404/page404.component';
+import { InputBindingComObjetosComponent } from './input-binding-com-objetos/input-binding-com-objetos.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'form-field', component: FormFieldComponent },
   { path: 'two-way-data-binding', component: TwoWayDataBindingComponent },
   { path: 'radio-button', component: RadioButtonComponent },
+  { path: 'input-binding', component: InputBindingComObjetosComponent },
   { path: '**', component: Page404Component }
 ];
 
