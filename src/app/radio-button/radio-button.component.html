@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="teste">
+        <label id="example-radio-group-label">Pick your favorite season</label>
+        <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+            [(ngModel)]="favoriteSeason">
+            <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+                {{season}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <div>Your favorite season is: {{favoriteSeason}}</div>
+    </div>
+    <div class="teste">
+        <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" color="primary"
+            [(ngModel)]="cor">
+            <mat-radio-button value="red">
+                Red
+            </mat-radio-button>
+            <mat-radio-button value="green">
+                Green
+            </mat-radio-button>
+            <mat-radio-button value="blue">
+                Blue
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="teste">
+        <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+            [(ngModel)]="tamanhoFonte">
+            <mat-radio-button value="12px">
+                12
+            </mat-radio-button>
+            <mat-radio-button value="14px">
+                14
+            </mat-radio-button>
+            <mat-radio-button value="16px">
+                16
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="teste" [ngStyle]=" {fontSize: tamanhoFonte, color: cor }">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+    </div>
+</div>

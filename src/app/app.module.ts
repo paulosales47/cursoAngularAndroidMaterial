@@ -13,6 +13,7 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatCardModule,
+  MatRadioModule
 } from '@angular/material';
 
 
@@ -25,6 +26,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { SelectComponent } from './select/select.component';
 import { FormFieldComponent } from './form-field/form-field.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
+import { Page404Component } from './pageStatus/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     CheckboxComponent,
     SelectComponent,
     FormFieldComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    RadioButtonComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

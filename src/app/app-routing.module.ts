@@ -8,6 +8,8 @@ import { SelectComponent } from './select/select.component';
 import { FormFieldComponent } from './form-field/form-field.component';
 import { combineLatest } from 'rxjs';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
+import { Page404Component } from './pageStatus/page404/page404.component';
 
 
 const routes: Routes = [
@@ -17,7 +19,9 @@ const routes: Routes = [
   { path: 'check-box', component: CheckboxComponent },
   { path: 'select', component: SelectComponent },
   { path: 'form-field', component: FormFieldComponent },
-  { path: 'two-way-data-binding', component: TwoWayDataBindingComponent }
+  { path: 'two-way-data-binding', component: TwoWayDataBindingComponent },
+  { path: 'radio-button', component: RadioButtonComponent },
+  { path: '**', component: Page404Component }
 ];
 
 @NgModule({
