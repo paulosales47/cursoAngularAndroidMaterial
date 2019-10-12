@@ -28,6 +28,7 @@ import { FormFieldComponent } from './form-field/form-field.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { RadioButtonComponent } from './radio-button/radio-button.component';
 import { Page404Component } from './pageStatus/page404/page404.component';
+import { InputBindingComponent } from './input-binding/input-binding.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { Page404Component } from './pageStatus/page404/page404.component';
     FormFieldComponent,
     TwoWayDataBindingComponent,
     RadioButtonComponent,
-    Page404Component
+    Page404Component,
+    InputBindingComponent
   ],
   imports: [
     BrowserModule,
