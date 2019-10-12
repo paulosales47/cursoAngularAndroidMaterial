@@ -4,12 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ButtonComponent } from './button/button.component';
 
-import { MatButtonModule, MatIconModule } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import {
+  MatButtonModule,
+  MatIconModule,
+  MatCheckboxModule
+} from '@angular/material';
+
+
+import { ButtonComponent } from './button/button.component'; import { FlexLayoutModule } from '@angular/flex-layout';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 
 @NgModule({
@@ -17,7 +23,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     AppComponent,
     ButtonComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +32,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
