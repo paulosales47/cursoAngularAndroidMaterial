@@ -9,13 +9,15 @@ import { ButtonComponent } from './button/button.component';
 import { MatButtonModule, MatIconModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
