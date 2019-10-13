@@ -9,19 +9,14 @@ export class ChildItemComponent implements OnInit {
 
   @Input() titulo: string;
 
-  @Output() somarUm = new EventEmitter<any>();
-  @Output() somarDois = new EventEmitter<any>();
-  @Output() subtrairUm = new EventEmitter<any>();
-  @Output() subtrairDois = new EventEmitter<any>();
+  @Output() alterarValor = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  somarUmClick() { this.somarUm.emit() };
-  somarDoisClick() { this.somarDois.emit(); }
-  subtrairUmClick() { this.subtrairUm.emit(); }
-  subtrairDoisClick() { this.subtrairDois.emit(); }
+  alterarValorClick(valor: number) { this.alterarValor.emit(valor) };
+
 
 }

@@ -1,15 +1,15 @@
 <h3>{{titulo}}</h3>
 <div class="container">
-    <button mat-raised-button color="primary" (click)="somarUmClick()">
+    <button mat-raised-button color="primary" (click)="alterarValorClick(1)">
         <mat-icon>exposure_plus_1</mat-icon>
     </button>
-    <button mat-raised-button color="primary" (click)="somarDoisClick()">
+    <button mat-raised-button color="primary" (click)="alterarValorClick(2)">
         <mat-icon>exposure_plus_2</mat-icon>
     </button>
-    <button mat-raised-button color="accent" (click)="subtrairUmClick()">
+    <button mat-raised-button color="accent" (click)="alterarValorClick(-1)">
         <mat-icon>exposure_neg_1</mat-icon>
     </button>
-    <button mat-raised-button color="accent" (click)="subtrairDoisClick()">
+    <button mat-raised-button color="accent" (click)="alterarValorClick(-2)">
         <mat-icon>exposure_neg_2</mat-icon>
     </button>
 </div>
