@@ -11,6 +11,8 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
 import { RadioButtonComponent } from './radio-button/radio-button.component';
 import { Page404Component } from './pageStatus/page404/page404.component';
 import { InputBindingComObjetosComponent } from './input-binding-com-objetos/input-binding-com-objetos.component';
+import { EventComponent } from './event/event.component';
+import { ChildItemComponent } from './event/child-item/child-item.component';
 
 
 const routes: Routes = [
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: 'two-way-data-binding', component: TwoWayDataBindingComponent },
   { path: 'radio-button', component: RadioButtonComponent },
   { path: 'input-binding', component: InputBindingComObjetosComponent },
+  { path: 'event', component: EventComponent },
+  { path: 'event-child', component: ChildItemComponent },
   { path: '**', component: Page404Component }
 ];
 
