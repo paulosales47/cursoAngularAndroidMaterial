@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: 'input-binding', component: InputBindingComObjetosComponent },
   { path: 'event', component: EventComponent },
   { path: 'event-child', component: ChildItemComponent },
+  { path: '', loadChildren: () => import('./template/template.module').then(m => m.TemplateModule) },
   { path: '**', component: Page404Component }
 ];
 
