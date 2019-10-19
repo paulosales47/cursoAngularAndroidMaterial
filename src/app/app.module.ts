@@ -14,7 +14,8 @@ import {
   MatInputModule,
   MatCardModule,
   MatRadioModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatDividerModule
 } from '@angular/material';
 
 
@@ -71,7 +72,8 @@ import { TimerComponent } from './pai/timer/timer.component';
     MatCardModule,
     FormsModule,
     MatRadioModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
