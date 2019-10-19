@@ -13,6 +13,7 @@ import { Page404Component } from './pageStatus/page404/page404.component';
 import { InputBindingComObjetosComponent } from './input-binding-com-objetos/input-binding-com-objetos.component';
 import { EventComponent } from './event/event.component';
 import { ChildItemComponent } from './event/child-item/child-item.component';
+import { PaiComponent } from './pai/pai.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'input-binding', component: InputBindingComObjetosComponent },
   { path: 'event', component: EventComponent },
   { path: 'event-child', component: ChildItemComponent },
+  { path: 'pai', component: PaiComponent },
   { path: '', loadChildren: () => import('./template/template.module').then(m => m.TemplateModule) },
   { path: '**', component: Page404Component }
 ];

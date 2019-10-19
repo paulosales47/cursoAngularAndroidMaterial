@@ -1,0 +1,7 @@
+<mat-card>
+    <mat-card-content>
+        <p>Segundos: {{ segundos() }}</p>
+        <p>Milisegundos: {{miliSegundos % 1000}} </p>
+        <mat-progress-bar mode="indeterminate" *ngIf="emExecucao"></mat-progress-bar>
+    </mat-card-content>
+</mat-card>

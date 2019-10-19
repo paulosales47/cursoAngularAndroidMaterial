@@ -13,7 +13,8 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatCardModule,
-  MatRadioModule
+  MatRadioModule,
+  MatProgressBarModule
 } from '@angular/material';
 
 
@@ -32,6 +33,9 @@ import { InputBindingComponent } from './input-binding/input-binding.component';
 import { InputBindingComObjetosComponent } from './input-binding-com-objetos/input-binding-com-objetos.component';
 import { EventComponent } from './event/event.component';
 import { ChildItemComponent } from './event/child-item/child-item.component';
+import { PaiComponent } from './pai/pai.component';
+import { FilhoComponent } from './pai/filho/filho.component';
+import { TimerComponent } from './pai/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,10 @@ import { ChildItemComponent } from './event/child-item/child-item.component';
     InputBindingComponent,
     InputBindingComObjetosComponent,
     EventComponent,
-    ChildItemComponent
+    ChildItemComponent,
+    PaiComponent,
+    FilhoComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +70,8 @@ import { ChildItemComponent } from './event/child-item/child-item.component';
     MatInputModule,
     MatCardModule,
     FormsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
