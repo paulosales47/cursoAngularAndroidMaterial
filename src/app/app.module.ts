@@ -37,6 +37,8 @@ import { ChildItemComponent } from './event/child-item/child-item.component';
 import { PaiComponent } from './pai/pai.component';
 import { FilhoComponent } from './pai/filho/filho.component';
 import { TimerComponent } from './pai/timer/timer.component';
+import { OnChangeComponent } from './on-change/on-change.component';
+import { ChangeNameComponent } from './on-change/change-name/change-name.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { TimerComponent } from './pai/timer/timer.component';
     ChildItemComponent,
     PaiComponent,
     FilhoComponent,
-    TimerComponent
+    TimerComponent,
+    OnChangeComponent,
+    ChangeNameComponent
   ],
   imports: [
     BrowserModule,
