@@ -39,6 +39,8 @@ import { FilhoComponent } from './pai/filho/filho.component';
 import { TimerComponent } from './pai/timer/timer.component';
 import { OnChangeComponent } from './on-change/on-change.component';
 import { ChangeNameComponent } from './on-change/change-name/change-name.component';
+import { InterceptingComponent } from './intercepting/intercepting.component';
+import { NameComponent } from './Intercepting/name/name.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { ChangeNameComponent } from './on-change/change-name/change-name.compone
     FilhoComponent,
     TimerComponent,
     OnChangeComponent,
-    ChangeNameComponent
+    ChangeNameComponent,
+    InterceptingComponent,
+    NameComponent
   ],
   imports: [
     BrowserModule,

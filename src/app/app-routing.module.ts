@@ -15,6 +15,7 @@ import { EventComponent } from './event/event.component';
 import { ChildItemComponent } from './event/child-item/child-item.component';
 import { PaiComponent } from './pai/pai.component';
 import { OnChangeComponent } from './on-change/on-change.component';
+import { InterceptingComponent } from './intercepting/intercepting.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'event-child', component: ChildItemComponent },
   { path: 'pai', component: PaiComponent },
   { path: 'onchange', component: OnChangeComponent },
+  { path: 'intercepting', component: InterceptingComponent },
   { path: '', loadChildren: () => import('./template/template.module').then(m => m.TemplateModule) },
   { path: '**', component: Page404Component }
 ];
